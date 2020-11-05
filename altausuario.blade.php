@@ -27,7 +27,7 @@
             @foreach($rango as $id => $nombre)
                 <option
                 value="{{$id}}"
-                {{is_array(old('rol_id')) ? (in_array($id, old('rol_id')) ? 'selected' : '')  : (isset($data) ? ($data->roles->firstWhere('id', $id) ? 'selected' : '') : '')}}
+                {{is_array(old('rol_id')) ? (in_array($id, old('rol_id')) ? 'selected' : '')  : (isset($datos) ? ($datos->roles->firstWhere('id', $id) ? 'selected' : '') : '')}}
                 >
                 {{$nombre}}
                 </option>
