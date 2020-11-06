@@ -39,7 +39,6 @@
         </section>
         <!--Fin Header-->
         <!--Inicio Aside(menu lateral)-->
-        @include("theme/$theme/aside")
         <!--Fin Aside-->
         <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
