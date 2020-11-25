@@ -17,7 +17,6 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="{{asset("assets/$theme/dist/css/skins/_all-skins.min.css")}}">
-
   @yield("styles")
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,7 +29,8 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue layout-boxed sidebar-mini">
+<div align="center"><img src="{{asset("storage/fondo/ciov6.jpg")}}" width="650" height="90"></div>
+<body class="hold-transition skin-red-light layout-boxed sidebar-mini">
     <!-- Site wrapper -->
     <div class="wrapper">
         <!--Inicio Header-->
@@ -39,6 +39,7 @@
         </section>
         <!--Fin Header-->
         <!--Inicio Aside(menu lateral)-->
+            @yield("lateral")
         <!--Fin Aside-->
         <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
@@ -47,7 +48,6 @@
                 </section>
         </div>
         <!--Inicio Footer-->
-        @include("theme/$theme/footer")
         <!--Fin Footer-->
     </div>
 <script src="{{asset("assets/$theme/bower_components/jquery/dist/jquery.min.js")}}"></script>
