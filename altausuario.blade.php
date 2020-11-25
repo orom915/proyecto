@@ -2,15 +2,17 @@
 @section('encabezado')
     @include("admin/admin/headeradmin")
 @endsection
+@section('lateral')
+    @include("admin/admin/aside")
+@endsection
 @section('contenido')
 @include('mensajes.form-error')
 <div class="box box-primary">
     <div class="box-header with-border">
-      <h3 class="box-title">Alta de Usuario</h3>
+      <h3 class="box-title"><b>Alta de Usuario</b></h3>
     </div>
-    <!-- /.box-header -->
     <!-- form start -->
-    <form action="{{route('usuario_guardar')}}" id="FormularioAltaUsuario"  method="POST">
+    <form action="{{route('usuario_guardar')}}" id="FormularioAltaUsuario"  method="POST" enctype="multipart/form-data">
         @csrf
       <div class="box-body">
         <div class="form-group">
@@ -33,6 +35,10 @@
                 </option>
             @endforeach
         </select>
+        </div>
+        <div class="form-group">
+          <label for="perfil">Imagen de perfil</label>
+          <input type="file" class="form-control" name="perfil" id="perfil" placeholder="Imagen de perfil">
         </div>
       </div>
       <!-- /.box-body -->
