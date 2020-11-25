@@ -2,6 +2,9 @@
 @section('encabezado')
     @include("admin/admin/headeradmin")
 @endsection
+@section('lateral')
+    @include("admin/admin/aside")
+@endsection
 @section('contenido')
     @include('mensajes.form-error')
     @include('mensajes.exito')
@@ -16,7 +19,7 @@
                         </a>
                     </div>
                 </div>
-                <form action="{{route('usuario_actualizar', ['id' => $datos->id])}}" id="form-general" class="form-horizontal form--label-right" method="POST" autocomplete="off">
+                <form action="{{route('usuario_actualizar', ['id' => $datos->id])}}" id="form-general" class="form-horizontal form--label-right" method="POST" autocomplete="off" enctype="multipart/form-data">
                     @csrf @method("put")
                     <div class="card-body">
                         <div class="box-body">
@@ -41,8 +44,11 @@
                                 @endforeach
                             </select>
                             </div>
+                            <div class="form-group">
+                                <label for="perfil">Imagen de perfil</label>
+                                <input type="file" class="form-control" name="perfil" id="perfil" placeholder="Imagen de perfil">
+                              </div>
                           </div>
-
                     </div>
                     <div class="card-footer">
                                 <button type="submit" class="btn btn-success">Actualizar</button>
