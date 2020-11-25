@@ -2,6 +2,9 @@
 @section('encabezado')
     @include("admin/admin/headeradmin")
 @endsection
+@section('lateral')
+    @include("admin/admin/aside")
+@endsection
 @section('contenido')
 <div class="row">
     <div class="col-lg-12">
