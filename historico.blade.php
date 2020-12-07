@@ -2,7 +2,6 @@
     <div class="box-header with-border">
       <h3 class="box-title"><b>Histórico de datos</b></h3>
     </div>
-    <!-- /.box-header -->
     <div class="box-body">
       <table class="table table-bordered">
         <tbody>
