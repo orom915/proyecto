@@ -1,16 +1,4 @@
-<header class="main-header">
-    <!-- Logo -->
-    <a class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini">Proyecto</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg">Proyecto</span>
-    </a>
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-expand-lg navbar-red bg-light"></a>
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-        </ul>
-      </div>
-    </nav>
-  </header>
+<header class="main-header" style="width: 100%"> 
+  <nav class="navbar navbar-static-top" style="text-align: center;margin-left:0px;font-size:20px;line-height: 50px;padding: 0 15px;font-weight: 300;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color:#fff">
+  CIOVID-OPTIMIZACION DE TEST</nav>
+</header>
