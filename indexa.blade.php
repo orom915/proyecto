@@ -8,4 +8,7 @@
 @section('contenido')
     @include('mensajes.exito')
     @include('admin.admin.historico')
+    @include('admin.admin.grafico')
+    @include('admin.admin.tabladatos')
+    @include('admin.admin.test')
 @endsection
