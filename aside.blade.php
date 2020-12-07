@@ -1,7 +1,5 @@
 <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-          <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
               <img src="{{Storage::url("imagenes/avatares/$fotos")}}" class="img-circle" alt="Imagen de perfil">
@@ -39,5 +37,4 @@
             </li>
           </ul>
         </section>
-        <!-- /.sidebar -->
       </aside>
