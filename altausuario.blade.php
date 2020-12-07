@@ -11,7 +11,6 @@
     <div class="box-header with-border">
       <h3 class="box-title"><b>Alta de Usuario</b></h3>
     </div>
-    <!-- form start -->
     <form action="{{route('usuario_guardar')}}" id="FormularioAltaUsuario"  method="POST" enctype="multipart/form-data">
         @csrf
       <div class="box-body">
@@ -29,8 +28,7 @@
             @foreach($rango as $id => $nombre)
                 <option
                 value="{{$id}}"
-                {{is_array(old('rol_id')) ? (in_array($id, old('rol_id')) ? 'selected' : '')  : (isset($datos) ? ($datos->roles->firstWhere('id', $id) ? 'selected' : '') : '')}}
-                >
+                {{is_array(old('rol_id')) ? (in_array($id, old('rol_id')) ? 'selected' : '')  : (isset($datos) ? ($datos->roles->firstWhere('id', $id) ? 'selected' : '') : '')}}>
                 {{$nombre}}
                 </option>
             @endforeach
@@ -38,11 +36,9 @@
         </div>
         <div class="form-group">
           <label for="perfil">Imagen de perfil</label>
-          <input type="file" class="form-control" name="perfil" id="perfil" placeholder="Imagen de perfil">
+          <input type="file" class="form-control" name="perfil" id="perfil" placeholder="Imagen de perfil" accept="image/*">
         </div>
       </div>
-      <!-- /.box-body -->
-
       <div class="box-footer">
         <button type="submit" class="btn btn-primary">Dar de alta</button>
       </div>
