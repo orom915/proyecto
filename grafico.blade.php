@@ -15,6 +15,7 @@
 <form method="POST" action="admin/importar/datos" id="enviodatos">
   @csrf
 </form>
+@include('admin.admin.tabladatos')
 
 @section('scripts')
   <script>
@@ -95,5 +96,26 @@
               lineChartOptions.datasetFill = false
               lineChart.Line(lineChartData, lineChartOptions)
       };
+  </script>
+  <script>
+        $(function () {
+            $('#tabladatos').DataTable({
+            'paging'      : true,
+            'lengthChange': false,
+            'searching'   : false,
+            'ordering'    : true,
+            'info'        : true,
+            'autoWidth'   : false,
+            "language": {
+                "info": "Mostrando de _START_ a _END_ de _TOTAL_ datos",
+                "emptyTable": "No hay datos disponibles",
+                "infoEmpty": "",
+                "paginate": {
+                    "previous": "Anterior",
+                    "next": "Siguiente"
+                    }
+                }
+            });
+        });
   </script>
 @endsection
