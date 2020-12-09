@@ -38,7 +38,6 @@
 <script src="{{asset("assets/$theme/bower_components/chart.js/Chart.js")}}"></script>
 <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
 <script src="{{asset("assets/$theme/dist/js/demo.js")}}"></script>
-<script src="{{asset("assets/js/tabla.js")}}"></script>
 @yield("scripts")
 </body>
 </html>
