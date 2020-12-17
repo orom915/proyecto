@@ -16,7 +16,7 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<div align="center"><img src="{{asset("storage/fondo/ciov6.jpg")}}" width="650" height="90"></div>
+<div align="center"><a href="http://cio.edu.umh.es/"><img src="{{asset("storage/fondo/ciov6.jpg")}}" width="650" height="90"></a></div>
 <body class="hold-transition skin-red-light layout-boxed sidebar-mini">
     <div class="wrapper">
         <section class="main-header">
@@ -38,6 +38,7 @@
 <script src="{{asset("assets/$theme/bower_components/chart.js/Chart.js")}}"></script>
 <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
 <script src="{{asset("assets/$theme/dist/js/demo.js")}}"></script>
+<script src="{{asset("assets/$theme/dist/js/pages/prueba.js")}}"></script>
 @yield("scripts")
 </body>
 </html>
