@@ -3,7 +3,10 @@
         <div class="box box-danger">
           <div class="box-header with-border">
             <h3 class="box-title"><b>Titulo</b></h3>
-          </div>
+            <span class="pull-right"><b>Actualizar datos</b>
+            <a href="{{route('actualizar_grafico')}}">
+              <i class="glyphicon glyphicon-plus"></i>
+            </a></span></div>
           <div class="box-body">
             <div class="chart">
               <canvas id="lineChart" style="height:350px"></canvas>
